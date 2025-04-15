@@ -8,6 +8,7 @@ A simple Flask web app to manage budgets.
    ```bash
    git clone https://github.com/luke-brous/flask-budget-app.git
    cd flask-budget-app
+```
 
 2. MAKE SURE YOU RUN THIS COMMAND BEFORE DOING ANY WORK
 ```bash
