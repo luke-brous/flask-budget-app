@@ -1,6 +1,13 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
+
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired, Length
+
+
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def home():
