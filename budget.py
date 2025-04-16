@@ -1,10 +1,20 @@
 from flask import Flask, render_template, redirect, url_for
+from flask_mysqldb import MySQL
 
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 
 app = Flask(__name__)
+
+app.config['MYSQL_HOST'] = 'localhost'
+app.config['MYSQL_USER'] = 'brouslr0' or 'burtar0'
+app.config['MYSQL_PASSWORD'] = 'penis' or 'balls'
+app.config['MYSQL_DB'] = 'budget_db'
+
+mysql = MySQL(app)
+
+
 
 @app.route('/')
 def home():
