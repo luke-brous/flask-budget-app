@@ -19,8 +19,12 @@ mysql = MySQL(app)
 @app.route('/')
 def home():
     # Example data to pass to the template
+    
     title = "Budget App"
-    description = "Track your expenses and manage your budget effectively."
+    resources = "Resources"
+    create_budget = "Budget"
+    summary = "Summary"
+    description = "Track your expenses and manage your budget effectively, all in one place."
     return render_template('index.html', title=title, description=description)
 
 if __name__ == '__main__':
