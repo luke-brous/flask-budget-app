@@ -15,19 +15,10 @@
 </head>
 <body class="bg-gray-100 text-green-800">
 
-<nav class="flex items-center justify-between flex-wrap bg-green-500 p-6 rounded-md bg-gradient-to-r from-green-400 to-green-600">
-  <div class="flex items-center space-x-2">
-  
-      <img src="/static/images/budget_app.ico" alt="Budget logo" class="h-10 w-10">
-      <a href="index.html" class="text-white font-bold text-2xl hover:text-amber-200 pl-8 ease-in-out delay-200">Home</a>
-    
-  </div>
-
-  <div class="flex space-x-5 text-white text-2xl">
-    <a href="create_budget.html" class="hover:text-amber-200 hover:text-2xl hover:-translate-y-0.5 transform ease-in-out delay-75">Budget</a>
-    <a href="resources.html" class="hover:text-amber-200 hover:text-2xl hover:-translate-y-0.5 transform ease-in-out delay-75">Resources</a>
-    <a href="summary.html" class="hover:text-amber-200 hover:text-2xl hover:-translate-y-0.5 transform ease-in-out delay-75">Summary</a>
-    
+  <div class="p-4">
+    <h1 class="text-3xl font-bold hover:text-indigo-600">{{ title }}</h1>
+    <p>{{ description }}</p>
+    <p class="text-lg m-5 ">Welcome to the Flask Budget App!</p>
   </div>
 
 </nav>
