@@ -1,5 +1,5 @@
-from flask import Flask, render_template, redirect, url_for
-from flask_mysqldb import MySQL
+from flask import Flask, render_template
+# from flask_mysqldb import MySQL
 
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
@@ -12,7 +12,7 @@ app.config['MYSQL_USER'] = 'brouslr0' or 'burtar0'
 app.config['MYSQL_PASSWORD'] = 'penis' or 'balls'
 app.config['MYSQL_DB'] = 'budget_db'
 
-mysql = MySQL(app)
+# mysql = MySQL(app)
 
 
 
@@ -29,3 +29,4 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
